@@ -1,13 +1,20 @@
 # todo-backend-node-koa
 
-Yet another [todo backend](http://todobackend.com) using Node.js with [Koa](https://koajs.com/).
+A simple [todo backend](http://todobackend.com) implementation using Node.js with [Koa](https://koajs.com/).
+
+## Requirements
+
+- [Docker](https://www.docker.com/) installed on your machine.
 
 ## Usage
 
-```
-node todo-app.js
-```
+To run the application with Docker, use the following command:
 
-## Tests
+```bash
+docker compose up --force-recreate --build
+```
+This will build and run the application inside a Docker container.
 
-You can run validate the application with http://www.todobackend.com/specs/.
+## Tests & Verification
+
+You can validate the implementation by using this URL: [http://todospecs.thing.zone/?http://localhost:8080](http://todospecs.thing.zone/?http://localhost:8080)
