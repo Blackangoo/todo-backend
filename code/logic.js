@@ -467,7 +467,7 @@ async function clearTag(ctx) {
 async function updateTag(ctx) {
     try {
         const tagId = ctx.params.id;
-        const { title } = ctx.request.body;
+        const {title} = ctx.request.body;
 
         const connection = await useConnection();
 
